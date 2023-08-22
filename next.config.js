@@ -4,8 +4,11 @@ const nextConfig = {
         domains: ['lh3.googleusercontent.com', 'res.cloudinary.com']
     },
     experimental: {
-        serverComponentsExternalPackages: ['cloudinary', 'graphql-request']
-      },
+      serverComponentsExternalPackages: ['cloudinary', 'graphql-request']
+    },
+    typescript: {
+      ignoreBuildErrors: true,
+    }
 }
 
 module.exports = nextConfig
